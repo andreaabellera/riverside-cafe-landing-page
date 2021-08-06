@@ -34,6 +34,7 @@ html, body{
     margin-left: 1vw;
     font-family: 'Great Vibes', cursive;
     font-size: 2em;
+    font-weight: 700;
     color: white;
 }
 
@@ -116,13 +117,20 @@ html, body{
     border-color: darkslategrey;
     border-style: double;
     border-width: 0.4em;
+}
+
+.constrain-items{
+    height: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .info-box h3{
-    font-size:5em;
+    margin-top: 1em;
+    font-size:4em;
 }
 
 .info-box p{
@@ -141,9 +149,9 @@ html, body{
 }
 
 .social-media a{
-    height: 4em;
-    width: 4em;
-    margin: 2em 1.5em 0em 1.5em;
+    height: 3.5em;
+    width: 3.5em;
+    margin: 2em 1em 0em 1em;
 }
 
 .social-media img{
