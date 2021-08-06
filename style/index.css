@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+html, body{
+    background-color: aqua;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+/*=============
+// HEADER
+===============*/
+#header-container{
+    height: 5em;
+    background-color: #030355;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-section{
+    display: flex;
+    align-items: center;
+}
+
+#header-container img{
+    height: 100%;
+    width: auto;
+    margin-left: 1vw;
+}
+
+.logo-title{
+    margin-left: 1vw;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2em;
+    color: white;
+}
+
+.button-array{
+    margin-right: 1vw;
+    display: flex;
+}
+
+.button-array a{
+    text-decoration: none;
+    color: #1e1e1e;
+    margin: 0.5em;
+}
+
+.header-button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    background-color: aliceblue;
+    background-image: linear-gradient(25deg, rgba(255, 229, 197, 0.4), rgba(255, 229, 197, 0.6), rgba(255, 229, 197, 0.4));
+    padding: 0.6em;
+    margin: 0 0.5em 0 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3em;
+    border-color: darkkhaki;
+    border-style: double;
+    border-width: 0.3em;
+}
+
+.header-button:hover {
+    filter:brightness(120%);
+    transition: 0.5s;
+    background-color: salmon;
+}
+
+/*=============
+// HERO
+===============*/
+#hero-container{
+    position: relative;
+    height: 100vh;
+    background-color: black;
+    background-image: url("../res/cafe.jpg");
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.gradient{
+    position: absolute;
+    right: 0;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    width: 75%;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), black 15%, black);
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    background-image: url("../res/wave.svg"); 
+    height: 10vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.info-box{
+    height: 60%;
+    width: 60%;
+    background-image: url("../res/large_plaid_box.png");
+    background-position: center;
+    background-size: cover;
+    transform: translate(5em, -3em);
+    border-bottom-left-radius: 10em;
+    border-bottom-right-radius: 10em;
+    border-color: darkslategrey;
+    border-style: double;
+    border-width: 0.4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-box h3{
+    font-size:5em;
+}
+
+.info-box p{
+    color: white;
+
+}
+
+.info-box .subhead{
+    color: white;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.social-media{
+    display: flex;
+}
+
+.social-media a{
+    height: 4em;
+    width: 4em;
+    margin: 2em 1.5em 0em 1.5em;
+}
+
+.social-media img{
+    height: 100%;
+    width: 100%;
+}
+
+.social-media img:hover{
+    animation: 2.6s ease-in-out spin;
+    /* animation-iteration-count: infinite; */
+}
+
+@keyframes spin{
+    20%{
+        transform: translateY(0%) rotateY(0deg);
+    }
+    35%{
+        transform: translateY(-60%) rotateY(180deg);
+    }
+    50%{
+        transform: translateY(0%) rotateY(0deg);
+    }
+    100%{
+        
+    }
+}
